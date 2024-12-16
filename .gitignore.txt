@@ -1,0 +1,40 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment folders
+venv/
+env/
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor configurations
+.idea/
+.vscode/
+*.swp
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore matplotlib cache
+.matplotlib/
+
+# Ignore Tkinter temporary files
+*.tcl
+
+# Ignore results and temporary data
+results/*.tmp
+*.bak
+*.old
+
+# Ignore configuration files with sensitive data
+*.env
+config.json

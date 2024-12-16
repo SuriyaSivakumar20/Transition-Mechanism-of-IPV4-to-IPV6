@@ -1,0 +1,64 @@
+IPv4 to IPv6 Transition
+
+## Overview
+This project focuses on the transition from IPv4 to IPv6, a critical step for addressing the limitations of the IPv4 addressing scheme and ensuring the scalability of modern networks. The project demonstrates key concepts, tools, and strategies for implementing this transition in a practical environment.
+
+## Features
+IPv4 to IPv6 Dual-Stack Implementation: Demonstrates the coexistence of both IPv4 and IPv6.
+Tunneling Techniques: Includes 6to4 and Teredo tunneling methods for scenarios where IPv6 support is incomplete.
+Address Translation (NAT64): Provides a bridge for communication between IPv4-only and IPv6-only devices.
+Network Analysis: Includes manual verification and debugging of packet flows during the transition.
+
+## Prerequisites
+Basic understanding of networking concepts (IP addressing, routing).
+Tools required:
+  -Linux or Windows machines with IPv6 enabled.
+
+## Project Structure
+```
+CN_Project/
+├── src/                   # Source code and configuration files
+├── docs/                  # Documentation and design diagrams
+├── results/               # Analysis and screenshots of network flows
+├── README.md              # Project documentation (this file)
+└── .gitignore             # Git ignore file
+```
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:your-username/CN_Project.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd CN_Project
+   ```
+3. Follow the instructions in the `docs/setup_guide.md` to configure the environment.
+
+## Usage
+Dual Stack: Run the scripts in `src/dual_stack` to enable IPv4 and IPv6 simultaneously.
+Tunneling: Use the configuration files in `src/tunneling` to set up tunneling between networks.
+Testing: Use testing scripts in `src/testing` to validate connectivity and packet flow.
+
+## Results
+The results of the project include:
+Successful implementation of IPv4 to IPv6 transition.
+Packet flow analysis showing effective communication between IPv4 and IPv6 nodes.
+
+## Contributions
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request for review.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact
+For questions or support, contact:
+Name: Suriya
+Email: suriyasivakumar08@gmail.com
+
+## Important Note:
+1. Make sure the systems are connected in same network.
+2. Use 2 system as receiver and sender..
