@@ -1,40 +1,24 @@
-# 🌐 Computer Networks Project: Secure File Transfer Protocol 🔒
+# 🌐 IPv6 Transition Mechanism 🚀
 
-Implementing a secure and efficient file transfer protocol with robust encryption and error detection. 🚀✨
+A comprehensive project to implement and analyze IPv6 transition mechanisms, ensuring seamless communication between IPv4 and IPv6 networks. 🔄
 
 ---
 
 ## 🌟 Features
-- 🔐 **Secure Communication**: Utilizes encryption (AES/RSA) for secure data transmission.
-- 🛠️ **Error Detection**: Implements CRC (Cyclic Redundancy Check) for integrity.
-- 📡 **Network Layers Simulation**: Simulates OSI model layers for data transmission.
-- 💬 **Real-Time Communication**: Chat server functionality included.
+- 🌐 **Dual Stack Implementation**: Supports both IPv4 and IPv6 communication.
+- 🔄 **Tunneling Mechanism**: Encapsulates IPv6 packets within IPv4 headers.
+- 🛠️ **NAT64/DNS64 Support**: Enables IPv6-only devices to communicate with IPv4 servers.
+- 📊 **Performance Analysis**: Evaluates latency, throughput, and packet loss.
 
 ---
 
 ## 📸 Project Overview
-![Project Animation](https://media.giphy.com/media/Ll22OhMLAlVDb8UQWe/giphy.gif)
 
----
-
-## 🛠️ Tech Stack
-- **Programming Language**: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-- **Network Protocols**: TCP/IP, UDP, ARP
-- **Encryption**: AES, RSA
-- **Error Detection**: CRC Algorithms
-
----
-
-## 🎉 How It Works
-1. **Sender**: Encrypts the file and sends it over a simulated network.
-2. **Receiver**: Receives the file, verifies integrity, and decrypts it.
-3. **Error Detection**: Ensures no data corruption during transmission.
-
----
-
-## 🚀 Quick Start
-
-### Clone the Repository
-```bash
-git clone https://github.com/your-username/CN-Project-Secure-File-Transfer.git
-cd CN-Project-Secure-File-Transfer
+```mermaid
+graph TD;
+    A[IPv4 Network] -->|Dual Stack| B[IPv6 Network];
+    B -->|Tunneling| C[IPv4-IPv6 Tunnel];
+    C -->|Packet Translation| D[NAT64/DNS64];
+    D --> E[Seamless Communication];
+    A -->|Fallback| D;
+    E --> F[Performance Analysis];
